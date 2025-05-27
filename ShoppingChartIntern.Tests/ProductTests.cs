@@ -1,7 +1,7 @@
-﻿using ShoppingCartIntern;
+﻿using ShoppingCart;
 using Xunit;
 
-namespace ShoppingCartIntern.Tests
+namespace ShoppingCart.Tests
 {
     public class ProductTests
     {

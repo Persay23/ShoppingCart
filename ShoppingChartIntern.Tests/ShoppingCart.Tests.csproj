@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ShoppingChartIntern\ShoppingCartIntern.csproj" />
+    <ProjectReference Include="..\ShoppingChartIntern\ShoppingCart.csproj" />
   </ItemGroup>
 
 </Project>
