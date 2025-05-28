@@ -37,6 +37,7 @@
                 if (string.IsNullOrEmpty(input) || input.Equals("checkout", StringComparison.OrdinalIgnoreCase)) break;
 
                 var selected = products.FirstOrDefault(p => p.Name.Equals(input, StringComparison.OrdinalIgnoreCase));
+
                 if (selected != null)
                 {
                     cart.AddProduct(selected.Name, selected.Price);
@@ -58,6 +59,7 @@
         {
             decimal budget;
             Console.Write("\nEnter your budget: ");
+
             while (!decimal.TryParse(Console.ReadLine(), out budget) || budget < 0)
             {
                 Console.Write("Invalid input. Enter valid budget: ");
