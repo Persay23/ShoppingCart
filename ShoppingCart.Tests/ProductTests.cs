@@ -5,6 +5,7 @@ namespace ShoppingCart.Tests
     public class ProductTests
     {
         [Fact]
+        // This test checks if a product can be created with a name and price.
         public void Product_ShouldStoreNameAndPriceCorrectly()
         {
             // Arrange & Act

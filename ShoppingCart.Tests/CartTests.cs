@@ -5,6 +5,7 @@ namespace ShoppingCart.Tests
     public class CartTests
     {
         [Fact]
+        // This test checks if a product can be added to the cart and the total amount is correct.
         public void AddProduct_ShouldAddToCart()
         {
             // Arrange
@@ -18,6 +19,7 @@ namespace ShoppingCart.Tests
         }
 
         [Fact]
+        // This test checks if products can be added to the cart and the amount is correct.
         public void GetTotalAmount_ShouldSumAllProducts()
         {
             // Arrange
@@ -34,6 +36,7 @@ namespace ShoppingCart.Tests
         }
 
         [Fact]
+        // This test checks if a product can be removed from the cart and the amount is correct.
         public void RemoveProduct_ShouldRemoveProduct()
         {
             // Arrange
@@ -50,6 +53,7 @@ namespace ShoppingCart.Tests
         }
 
         [Fact]
+        // This test checks if removing a product by index that does not exist returns false.
         public void RemoveProduct_InvalidIndex_ShouldReturnFalse()
         {
             // Arrange
@@ -60,6 +64,7 @@ namespace ShoppingCart.Tests
         }
 
         [Fact]
+        // This test checks if the cheapest product in the cart is returned correctly.
         public void CheapestProduct_ShouldReturnCorrectValue()
         {
             // Arrange
@@ -76,6 +81,7 @@ namespace ShoppingCart.Tests
         }
 
         [Fact]
+        // This test checks if the cheapest product in an empty cart returns zero.
         public void CheapestProduct_EmptyCart_ShouldReturnZero()
         {
             // Arrange
@@ -91,6 +97,7 @@ namespace ShoppingCart.Tests
         public class BudgetLogicTests
         {
             [Fact]
+            // This test checks if the amount of products in the cart is within a budget.
             public void BudgetCheck_ReturnsTrue()
             {
                 // Arrange
@@ -107,6 +114,7 @@ namespace ShoppingCart.Tests
             }
 
             [Fact]
+            // This test checks if the amount of products in the cart exceeds a budget.
             public void BudgetCheck_TooLow_ShouldReturnsFalse()
             {
                 // Arrange
