@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ShoppingCart
+﻿namespace ShoppingCart
 {
     public class Cart
     {
@@ -16,11 +10,6 @@ namespace ShoppingCart
 
         public decimal GetTotalAmount() => products.Sum(p => p.Price);
 
-        public void ShowAllProducts()
-        {
-            ShowProducts(products);
-        }
-
         public static void ShowProducts(List<Product> products)
         {
             Console.WriteLine("Items:");
@@ -31,6 +20,8 @@ namespace ShoppingCart
                 index++;
             }
         }
+
+        public List<Product> GetSelectedProducts() => products;
 
         public bool RemoveProduct(int index)
         {

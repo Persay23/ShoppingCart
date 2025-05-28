@@ -1,5 +1,4 @@
-﻿using ShoppingCart;
-using Xunit;
+﻿using Xunit;
 
 namespace ShoppingCart.Tests
 {
@@ -8,8 +7,10 @@ namespace ShoppingCart.Tests
         [Fact]
         public void Product_ShouldStoreNameAndPriceCorrectly()
         {
-            var product = new Product("Apple", 1.20m);
+            // Arrange & Act
+            var product = new Product ("Apple", 1.20m);
 
+            // Assert
             Assert.Equal("Apple", product.Name);
             Assert.Equal(1.20m, product.Price);
         }
